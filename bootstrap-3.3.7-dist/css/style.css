@@ -1,0 +1,43 @@
+.header {
+	height: 100vh;
+	width: 100vw;
+    background: url(../lol.jpeg);
+    color: white;
+    background-attachment: fixed;
+}
+
+body {
+	font-family: Monaco;
+}
+
+.mac {
+	width: 90%;
+}
+
+.header .row {
+	margin-top: 20%;
+}
+
+.buyBtn {
+	background-color: #DCE35B;
+	font-size: 26px;
+	color: #EC6EAD;
+	transition: all .5s;
+	border: none;
+	border-radius: 0px;
+}
+
+.buyBtn:hover {
+	background-color: #EC6EAD;
+	color: #DCE35B;
+}
+
+.info {
+	font-size: 20px;
+	height: 350px;
+	padding: 30px;
+}
+
+red {
+	color: red;
+}
