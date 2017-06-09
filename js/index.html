@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="center">
+			<button onclick="tuzik()">Дай цитату, гад</button>
+			<h1 id="result"></h1>
+			<input id="input" type="" name="" onkeydown="photon(e)">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+
+		function photon (e) {
+			var max = 10;
+			var a = document.getElementById('input').value.length;
+			document.getElementById('result').innerHTML = a;
+
+			if (a > 10 && e.key != 8) {
+				alert('Много');
+				document.getElementById('input').value = a.substr(0,max);
+			}
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>
