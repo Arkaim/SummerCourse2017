@@ -6,33 +6,25 @@
 	<title>JS</title>
 </head>
 <body>
-	
-	<div class="container">
-		<div class="center">
-			<button onclick="tuzik()">Дай цитату, гад</button>
-			<h1 id="result"></h1>
-			<input id="input" type="" name="" onkeydown="photon()">
-		</div>
+	<button id="button" >Click</button>
+	<div id="result">
+		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi optio incidunt voluptas tenetur placeat assumenda rerum magnam sit. Neque asperiores, quas rerum dolorem excepturi vitae temporibus sint consequatur provident accusantium.</h2>
 	</div>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
 	<script type="text/javascript">
+		$('#button').click(function () {
+			$('#result').animate({
+				opacity: 0.5,
+				left: '+=150px',
+				height: 'toggle'
+			}, 1000, function() {})
+		});	
 
-
-		function photon () {
-			var max = 10;
-			var a = document.getElementById('input').value.length;
-			document.getElementById('result').innerHTML = a;
-
-			if (a > 10) {
-				alert('Много');
-				document.getElementById('input').value = a.substr(0,max);
-			}
-		}
-
-
-
-
+		
+		
 	</script>
-
 </body>
 </html>
